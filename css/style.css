@@ -1,292 +1,94 @@
-/* Reglas de CSS para Maquetar una Pagina Basica con Estructura HTML5 y CSS*/
-/*Creado por Ing. Juancito Peña*/
-
-/* 1ERA Regla Marenes 0 a todo el Body y su contenido, iniciamos en cero todo*/
-
-* {
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f8f8f8;
 }
-
-/* 2DA Regla para el Body */
-
-body {
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(254, 17, 17);
-}
-
-/* 3ERA Regla para el Contenedor de mi Pagina Web */
 
 .container {
-  width: 70%;
-  height: 100%;
-  color: black;
-  margin: 0px auto;
-  border-radius: 5px;
-  border: 5px solid #efe30a;
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: #ffffff;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-/* 4TA Regla para el Encabezado o Header */
-
-header{
-  color: black;
-  font-size: 20px;
+header {
+  background-color: #333;
+  color: #fff;
   text-align: center;
-  background-color:rgb(220, 206, 10);
-  width:100%;
-  height:100%;
-  line-height:50px;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  padding: 20px 0;
 }
 
-/*5TA REGLA */
-
-nav{
-  font-size: 30px;
-  text-align: center;
-  line-height: 60px;
-  background-color:orange;
-  color: white;
-} 
-
-/* 6TA Regla */
-
-#contenido{
-  width:70%;
-  height:100%;
-  background-color: rgb(65, 231, 87);
-  float: left;
-  margin-bottom: 10px;
-  margin-top: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  line-height:100px;
-}
-/* 7MA Regla */
-/*
-article{
-  width:95%;
-  color: white;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  line-height:100px;
-  background-color: rgb(9, 136, 26);
-} 
-*/
-/* 8VA Regla */
-
-#contenido h2{
-  font-size: 30px;
-  text-align: center;
-  line-height: 600px;
-  color: white;
-}
-
-/* 9NA Regla */ 
-
-aside{
-  width:29%;
-  height:600px;
-  background-color: green;
-  float: right;
-  margin-top: 10px;
-
-}
-
-/* 9NA Regla */
-
-aside h2{
-  font-size: 20px;
-  text-align: center;
-  line-height: 20px;
-  color: white;
-}
-
-
-aside img{
-width:95%;
-height:90%;
-background-color: green;
-float: right;
-margin: 0 auto;
-padding: 0 auto;
-}
-
-
-.clearfix{
-  clear: both;
-} 
-
-/* Sectima Regla para el estiolo  del footer */
-
-footer{
-  background-color: #750984;
-  width: 100%;
-  height: 70px;
-  line-height: 70px;
-  text-align: center;
-  color: white;
-  border-top: 1px solid black;
-  font-size: 20px;
-  font-weight: bold;
-  margin-right: 10px;
-  margin-top: 10px;
-}
-
-
-/* 10MA Regla para el estilo del movil de 300 a 768  */
-
-@media (max-width: 768px) and (min-width: 300px) {
-     
-/* 1ERA Regla Marenes 0 a todo el Body y su contenido, iniciamos en cero todo*/
-
-* {
-margin: 0;
-padding: 0;
-}
-
-/* 2DA Regla para el Body */
-
-body {
-text-align: center;
-font-family: Arial, Helvetica, sans-serif;
-background-color: rgb(254, 17, 17);
-}
-
-/* 3ERA Regla para el Contenedor de mi Pagina Web */
-
-.container {
-width: 95%;
-height: 100%;
-color: black;
-margin: 0px auto;
-border-radius: 5px;
-border: 5px solid #efe30a;
-padding-left: 5px;
-padding-right: 5px;
-background-color: #ffffff;
-margin-top: 1px;
-margin-bottom: 1px;
-}
-
-/*5TA REGLA */
-
-nav{
-font-size: 30px;
-text-align: center;
-line-height: 60px;
-background-color:orange;
-color: white;
-} 
-
-/* 6TA Regla */
-
-#contenido{
-width:100%;
-height:100%;
-background-color: rgb(65, 231, 87);
-float: left;
-margin-bottom: 10px;
-margin-top: 10px;
-display: block;
-margin-left: auto;
-margin-right: auto;
-text-align: center;
-line-height:100px;
-}
-
-aside{
-width:100%;
-height:600px;
-background-color: green;
-float: right;
-margin-top: 10px;
-
-}
-
-
-
-/* 10MA Regla para el estilo del movil de 300 a 768  */
-
-@media (max-width: 1024px) and (min-width: 769px) {
-     
-/* 1ERA Regla Marenes 0 a todo el Body y su contenido, iniciamos en cero todo*/
-
-* {
-  margin: 0;
+nav ul {
+  list-style-type: none;
   padding: 0;
-}
-
-/* 2DA Regla para el Body */
-
-body {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(254, 17, 17);
 }
 
-/* 3ERA Regla para el Contenedor de mi Pagina Web */
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
 
-.container {
-  width: 95%;
-  height: 100%;
-  color: black;
-  margin: 0px auto;
+nav ul li a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #fff;
+  background-color: #333;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+article, aside {
+  flex: 1;
+  background-color: #fff;
+  padding: 20px;
   border-radius: 5px;
-  border: 5px solid #efe30a;
-  padding-left: 5px;
-  padding-right: 5px;
-  background-color: #ffffff;
-  margin-top: 1px;
-  margin-bottom: 1px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/*5TA REGLA */
-
-nav{
-  font-size: 30px;
+footer {
+  background-color: #333;
+  color: #fff;
   text-align: center;
-  line-height: 60px;
-  background-color:orange;
-  color: white;
-} 
+  padding: 10px 0;
+  margin-top: 20px;
+}
 
-/* 6TA Regla */
-
-#contenido{
-  width:100%;
-  height:100%;
-  background-color: rgb(65, 231, 87);
-  float: left;
+/* Estilos específicos */
+h1 {
+  font-size: 36px;
   margin-bottom: 10px;
-  margin-top: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  line-height:100px;
 }
 
-aside{
-  width:100%;
-  height:600px;
-  background-color: green;
-  float: right;
-  margin-top: 10px;
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
 
+p {
+  font-size: 16px;
+  line-height: 1.5;
 }
+
+ul {
+  margin-top: 10px;
 }
+
+ul li {
+  margin-bottom: 5px;
+}
+
+ul li:last-child {
+  margin-bottom: 0;
 }
